@@ -56,11 +56,7 @@
 	<string>UIStatusBarStyleDefault</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string></string>
-		<string></string>
-		<string>/font/FontopoSUBWAY.otf</string>
 		<string>/font/fontawesome-webfont.ttf</string>
-		<string>/font/Maven Pro Regular.otf</string>
 	</array>
 </dict>
 </plist>
