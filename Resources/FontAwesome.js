@@ -71,7 +71,7 @@ exports.FontAwesome = (function(global){
 			indentLeft: String.fromCharCode(0xf03b),
 			indentRight: String.fromCharCode(0xf03c),
 			facetimeVideo: String.fromCharCode(0xf03d),
-			picure: String.fromCharCode(0xf03e),
+			picture: String.fromCharCode(0xf03e),
 			pencil: String.fromCharCode(0xf040),
 			mapMarker: String.fromCharCode(0xf041),
 			adjust: String.fromCharCode(0xf042),

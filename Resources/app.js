@@ -2,20 +2,25 @@
 	var window = Ti.UI.createWindow({
 		backgroundColor: '#fff'
 	});
-
-	var textLabel = Ti.UI.createLabel({
+/*
+	var textField = Ti.UI.createTextField({
 		top: 10,
-		width: Ti.UI.FILL,
-		height: Ti.UI.SIZE,
-		color: '#000',
-		textAlign: 'center',
-		text: 'This is FontAwesome!'
+		left: 10,
+		width: 300,
+		height: 30,
+		borderWidth: 1,
+		clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ONFOCUS,
+		paddingLeft: 10,
+		value: '',
+		hintText: 'This is hintText',
+		font: { fontSize: 18, fontFamily: 'FontopoSUBWAY' }
 	});
-	window.add(textLabel);
+	window.add(textField);
+*/
 
 	var fontawesome = require('FontAwesome').FontAwesome();
 
-	var iconLabel = Ti.UI.createLabel({
+	var octocatLabel = Ti.UI.createLabel({
 		width: Ti.UI.FILL,
 		height: Ti.UI.SIZE,
 		color: '#000',
@@ -26,7 +31,31 @@
 		textAlign: 'center',
 		text: fontawesome.icon('github')
 	});
-	window.add(iconLabel);
+	window.add(octocatLabel);
+
+	var baloonLabel = Ti.UI.createLabel({
+		top: 150,
+		right: 30,
+		width: Ti.UI.SIZE,
+		height: Ti.UI.SIZE,
+		color: '#000',
+		font: {
+			fontSize: 100,
+			fontFamily: 'FontAwesome'
+		},
+		text: fontawesome.icon('commentAlt')
+	});
+	window.add(baloonLabel);
+
+	var awesomeLabel = Ti.UI.createLabel({
+		top: 26,
+		font: {
+			fontSize: 14,
+			fontWeight: 'bold'
+		},
+		text: 'Awesome!'
+	});
+	baloonLabel.add(awesomeLabel);
 
 	window.open();
 })();
