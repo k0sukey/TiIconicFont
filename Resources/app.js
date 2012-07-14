@@ -2,60 +2,73 @@
 	var window = Ti.UI.createWindow({
 		backgroundColor: '#fff'
 	});
-/*
-	var textField = Ti.UI.createTextField({
-		top: 10,
-		left: 10,
-		width: 300,
-		height: 30,
-		borderWidth: 1,
-		clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ONFOCUS,
-		paddingLeft: 10,
-		value: '',
-		hintText: 'This is hintText',
-		font: { fontSize: 18, fontFamily: 'FontopoSUBWAY' }
-	});
-	window.add(textField);
-*/
+	
+	var osname = Ti.Platform.osname;
+	var os = function(/*Object*/ map) {
+		var def = map.def||null; //default function or value
+		if (map[osname]) {
+			if (typeof map[osname] == 'function') { return map[osname](); }
+			else { return map[osname]; }
+		}
+		else {
+			if (typeof def == 'function') { return def(); }
+			else { return def; }
+		}
+	};
 
 	var fontawesome = require('FontAwesome').FontAwesome();
-
+	
+	var wrapView = Ti.UI.createView({
+		height : 200
+	});
+	window.add(wrapView);
+	
 	var octocatLabel = Ti.UI.createLabel({
 		width: Ti.UI.FILL,
 		height: Ti.UI.SIZE,
 		color: '#000',
 		font: {
 			fontSize: 100,
-			fontFamily: 'FontAwesome'
+			fontFamily: os({
+				iphone : 'FontAwesome',
+				ipad : 'FontAwesome',
+				android : 'fontawesome-webfont'
+			})
 		},
 		textAlign: 'center',
 		text: fontawesome.icon('github')
 	});
-	window.add(octocatLabel);
+	wrapView.add(octocatLabel);
 
 	var baloonLabel = Ti.UI.createLabel({
-		top: 150,
+		top: 20,
 		right: 30,
 		width: Ti.UI.SIZE,
 		height: Ti.UI.SIZE,
 		color: '#000',
 		font: {
 			fontSize: 100,
-			fontFamily: 'FontAwesome'
+			fontFamily: os({
+				iphone : 'FontAwesome',
+				ipad : 'FontAwesome',
+				android : 'fontawesome-webfont'
+			})
 		},
 		text: fontawesome.icon('commentAlt')
 	});
-	window.add(baloonLabel);
+	wrapView.add(baloonLabel);
 
 	var awesomeLabel = Ti.UI.createLabel({
-		top: 26,
+		top: 45,
+		right: 43,
 		font: {
 			fontSize: 14,
 			fontWeight: 'bold'
 		},
+		color : 'black',
 		text: 'Awesome!'
 	});
-	baloonLabel.add(awesomeLabel);
-
+	wrapView.add(awesomeLabel);
+	
 	window.open();
 })();
