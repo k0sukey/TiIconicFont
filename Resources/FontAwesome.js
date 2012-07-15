@@ -210,7 +210,7 @@ exports.FontAwesome = (function(global){
 			sort: String.fromCharCode(0xf0dc),
 			sortDown: String.fromCharCode(0xf0dd),
 			sortUp: String.fromCharCode(0xf0de),
-			envelopeAll: String.fromCharCode(0xf0e0),
+			envelopeAlt: String.fromCharCode(0xf0e0),
 			linkedin: String.fromCharCode(0xf0e1),
 			undo: String.fromCharCode(0xf0e2),
 			legal: String.fromCharCode(0xf0e3),
