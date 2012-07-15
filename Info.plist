@@ -56,7 +56,7 @@
 	<string>UIStatusBarStyleDefault</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>/font/fontawesome-webfont.ttf</string>
+		<string>/fonts/fontawesome-webfont.ttf</string>
 	</array>
 </dict>
 </plist>

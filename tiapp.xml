@@ -4,7 +4,7 @@
         <target device="mobileweb">false</target>
         <target device="iphone">true</target>
         <target device="ipad">false</target>
-        <target device="android">false</target>
+        <target device="android">true</target>
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.0.1.GA2</sdk-version>
@@ -36,7 +36,11 @@
             <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
     </iphone>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <supports-screens android:anyDensity="false"/>
+        </manifest>
+    </android>
     <mobileweb>
         <precache/>
         <splash>
