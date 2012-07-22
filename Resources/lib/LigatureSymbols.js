@@ -97,7 +97,7 @@ function LigatureSymbols(options) {
 		notify: 0xe097,
 		file: 0xe048,
 		print: 0xe10a,
-		delete: 0xe12c,
+		del: 0xe12c,
 		clear: 0xe02f,
 		save: 0xe115,
 		upload: 0xe136,
@@ -212,6 +212,9 @@ function LigatureSymbols(options) {
 }
 
 LigatureSymbols.prototype.getCharcode = function(options) {
+	if (options === 'delete') {
+		options = 'del';
+	}
 	return this.charcode[options];
 }
 
