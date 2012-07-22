@@ -57,6 +57,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>/fonts/fontawesome-webfont.ttf</string>
+		<string>/fonts/LigatureSymbols.ttf</string>
 	</array>
 </dict>
 </plist>
