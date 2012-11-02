@@ -23,16 +23,20 @@ exports.IconicFont = (function(global){
 	IconicFont.prototype.icon = function(options){
 		var self = this;
 
-		if (options instanceof Array) {
-			var icons = [];
-
-			options.forEach(function(value){
-				icons.push(String.fromCharCode(self.font.getCharcode(value)));
+		options.forEach(function(value){
+				if(typeof value === 'string') {
+					icons.push(self.font.getCharcode(value));
+				} else {
+					icons.push(String.fromCharCode(self.font.getCharcode(value)));
+				}
 			});
 
 			return icons;
 		} else {
-			return String.fromCharCode(self.font.getCharcode(options));
+			if(typeof options === 'string') {
+				return self.font.getCharcode(options);
+			} else {
+				return String.fromCharCode(self.font.getCharcode(options));
 		}
 	};
 
