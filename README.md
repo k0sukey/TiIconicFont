@@ -10,24 +10,37 @@ https://wiki.appcelerator.org/display/guides/Custom+Fonts
     * http://fortawesome.github.com/Font-Awesome using fontawesome-webfont.ttf
 * Ligature Symbols
     * http://kudakurage.com/ligature_symbols/ using LigatureSymbols.ttf
+* SS Pika
+    * http://symbolset.com/ SSPika.ttf
 * Resources/app.js
 
     var window = Ti.UI.createWindow();
-    
-    var fontawesome = require('lib/IconicFont').IconicFont({ font: 'lib/FontAwesome' });
+
+    var fontawesome = require('lib/IconicFont').IconicFont({
+        font: 'lib/FontAwesome',
+        ligature: false // optional, for ligature
+    });
     var fontawesomeLabel = Ti.UI.createLabel({
         font: { fontFamily: fontawesome.fontfamily() },
         text: fontawesome.icon('github') // or text: fontawesome.icon([ 'github', 'facebook', 'twitter' ]).join('')
     });
     window.add(fontawesomeLabel);
-    
-    var ligaturesymbols = require('lib/IconicFont').IconicFont({ font: 'lib/LigatureSymbols' });
+
+    var ligaturesymbols = require('lib/IconicFont').IconicFont({
+        font: 'lib/LigatureSymbols',
+        ligature: false // optional, for ligature
+    });
     var ligaturesymbolsLabel = Ti.UI.createLabel({
         font: { fontFamily: ligaturesymbols.fontfamily() },
         text: ligaturesymbols.icon('twitter') // or text: ligaturesymbols.icon([ 'github', 'facebook', 'twitter' ]).join('')
     });
     window.add(ligaturesymbolsLabel);
-    
+
+    var sspika = require('lib/IconicFont').IconicFont({
+        font: 'lib/ti.ss-pika',
+        ligature: true // optional, for ligature
+    });
+
     window.open();
 
 ##Credits
