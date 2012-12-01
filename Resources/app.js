@@ -3,8 +3,18 @@
 		backgroundColor: '#fff'
 	});
 
-	var fontawesome = require('lib/IconicFont').IconicFont({ font: 'lib/FontAwesome' });
-	var ligaturesymbols = require('lib/IconicFont').IconicFont({ font: 'lib/LigatureSymbols' });
+	var fontawesome = require('lib/IconicFont').IconicFont({
+		font: 'lib/FontAwesome',
+		ligature: false	// optional
+	});
+	var ligaturesymbols = require('lib/IconicFont').IconicFont({
+		font: 'lib/LigatureSymbols',
+		ligature: false	// optional
+	});
+	var sspika = require('lib/IconicFont').IconicFont({
+		font: 'lib/ti.ss-pika',
+		ligature: true	// optional
+	});
 
 	var wrapView = Ti.UI.createView({
 		height : 200

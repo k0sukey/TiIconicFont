@@ -1,0 +1,103 @@
+Logfile initialized
+[INFO] logfile = /Users/k_isobe/src/TiFontAwesome/build.log
+[DEBUG] /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/builder.py install TiFontAwesome /Users/k_isobe/dev/android-sdk-macosx /Users/k_isobe/src/TiFontAwesome be.k0suke.tifontawesome 7
+[INFO] Titanium SDK version: 2.0.1 (04/12/12 16:33 999c68a)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.066538 seconds on emulator to get ready
+[DEBUG] be.k0suke.tifontawesome installed? False
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
+[TRACE] COPYING CREATED FILE: /Users/k_isobe/src/TiFontAwesome/Resources/android/appicon.png => /Users/k_isobe/src/TiFontAwesome/build/android/bin/assets/Resources/appicon.png
+[TRACE] COPYING CREATED FILE: /Users/k_isobe/src/TiFontAwesome/Resources/android/default.png => /Users/k_isobe/src/TiFontAwesome/build/android/bin/assets/Resources/default.png
+[TRACE] COPYING CREATED FILE: /Users/k_isobe/src/TiFontAwesome/Resources/app.js => /Users/k_isobe/src/TiFontAwesome/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING CREATED FILE: /Users/k_isobe/src/TiFontAwesome/Resources/fonts/LigatureSymbols.ttf => /Users/k_isobe/src/TiFontAwesome/build/android/bin/assets/Resources/fonts/LigatureSymbols.ttf
+[TRACE] COPYING CREATED FILE: /Users/k_isobe/src/TiFontAwesome/Resources/lib/FontAwesome.js => /Users/k_isobe/src/TiFontAwesome/build/android/bin/assets/Resources/lib/FontAwesome.js
+[TRACE] COPYING CREATED FILE: /Users/k_isobe/src/TiFontAwesome/Resources/lib/IconicFont.js => /Users/k_isobe/src/TiFontAwesome/build/android/bin/assets/Resources/lib/IconicFont.js
+[TRACE] COPYING CREATED FILE: /Users/k_isobe/src/TiFontAwesome/Resources/lib/LigatureSymbols.js => /Users/k_isobe/src/TiFontAwesome/build/android/bin/assets/Resources/lib/LigatureSymbols.js
+[TRACE] Generating Java Classes
+[DEBUG] Processing Android resource drawables
+[DEBUG] app stylesheet => /Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/ApplicationStylesheet.java
+[DEBUG] copying app icon: /Users/k_isobe/src/TiFontAwesome/build/android/bin/assets/Resources/appicon.png
+[DEBUG] generating theme.xml
+[DEBUG] found drawable-long-land-hdpi splash screen at /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] copying /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-long-land-hdpi/default.png splash screen to /Users/k_isobe/src/TiFontAwesome/build/android/res/drawable-long-land-hdpi/background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] copying /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-long-land-ldpi/default.png splash screen to /Users/k_isobe/src/TiFontAwesome/build/android/res/drawable-long-land-ldpi/background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] copying /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-long-port-hdpi/default.png splash screen to /Users/k_isobe/src/TiFontAwesome/build/android/res/drawable-long-port-hdpi/background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] copying /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-long-port-ldpi/default.png splash screen to /Users/k_isobe/src/TiFontAwesome/build/android/res/drawable-long-port-ldpi/background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] copying /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /Users/k_isobe/src/TiFontAwesome/build/android/res/drawable-notlong-land-hdpi/background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] copying /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /Users/k_isobe/src/TiFontAwesome/build/android/res/drawable-notlong-land-ldpi/background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] copying /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /Users/k_isobe/src/TiFontAwesome/build/android/res/drawable-notlong-land-mdpi/background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] copying /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-port-hdpi/default.png splash screen to /Users/k_isobe/src/TiFontAwesome/build/android/res/drawable-notlong-port-hdpi/background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] copying /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-port-ldpi/default.png splash screen to /Users/k_isobe/src/TiFontAwesome/build/android/res/drawable-notlong-port-ldpi/background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-port-mdpi/default.png
+[DEBUG] copying /Users/k_isobe/src/TiFontAwesome/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /Users/k_isobe/src/TiFontAwesome/build/android/res/drawable-notlong-port-mdpi/background.png
+[DEBUG] found splash screen at /Users/k_isobe/src/TiFontAwesome/build/android/bin/assets/Resources/default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding /Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/ApplicationStylesheet.java to javac build list
+[DEBUG] adding /Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/R.java to javac build list
+[DEBUG] adding /Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/TifontawesomeActivity.java to javac build list
+[DEBUG] adding /Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/TifontawesomeAppInfo.java to javac build list
+[DEBUG] adding /Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/TifontawesomeApplication.java to javac build list
+[DEBUG] Building Java Sources: "/Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/ApplicationStylesheet.java" "/Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/R.java" "/Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/TifontawesomeActivity.java" "/Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/TifontawesomeAppInfo.java" "/Users/k_isobe/src/TiFontAwesome/build/android/gen/be/k0suke/tifontawesome/TifontawesomeApplication.java"
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: /Users/k_isobe/src/TiFontAwesome/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/fonts/LigatureSymbols.ttf
+[DEBUG] from resource zip => assets/Resources/lib/FontAwesome.js
+[DEBUG] from resource zip => assets/Resources/lib/IconicFont.js
+[DEBUG] from resource zip => assets/Resources/lib/LigatureSymbols.js
+[DEBUG] from resource zip => assets/Resources/app.js
+[DEBUG] from resource zip => assets/Resources/appicon.png
+[DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/app.json
+[DEBUG] from resource zip => assets/index.json
+[DEBUG] from resource zip => assets/tiapp.xml
+[DEBUG] from resource zip => res/drawable/appicon.png
+[DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => AndroidManifest.xml
+[DEBUG] from resource zip => resources.arsc
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /Users/k_isobe/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] installing native SDK libs
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.031997 seconds on emulator to get ready
+[INFO] Installing application on device
+[INFO] Application installed. Launch from drawer on Home Screen

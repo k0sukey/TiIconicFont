@@ -12,6 +12,7 @@ exports.IconicFont = (function(global){
 		}
 
 		if (!options) { options = {}; }
+		self.ligature = options.ligature || false;
 		var Font = require(options.font);
 		self.font = new Font();
 
@@ -23,8 +24,9 @@ exports.IconicFont = (function(global){
 	IconicFont.prototype.icon = function(options){
 		var self = this;
 
-		options.forEach(function(value){
-				if(typeof value === 'string') {
+		if (options instanceof Array) {
+			options.forEach(function(value){
+				if (self.ligature) {
 					icons.push(self.font.getCharcode(value));
 				} else {
 					icons.push(String.fromCharCode(self.font.getCharcode(value)));
@@ -33,10 +35,11 @@ exports.IconicFont = (function(global){
 
 			return icons;
 		} else {
-			if(typeof options === 'string') {
+			if (self.ligature) {
 				return self.font.getCharcode(options);
 			} else {
 				return String.fromCharCode(self.font.getCharcode(options));
+			}
 		}
 	};
 
