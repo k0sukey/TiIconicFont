@@ -2,3 +2,5 @@
 tmp
 build
 *.ttf
+Makefile
+bin
