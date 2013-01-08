@@ -916,10 +916,7 @@ function SSPika(options) {
 }
 
 SSPika.prototype.getCharcode = function(options) {
-	if (options === 'delete') {
-		options = 'del';
-	}
 	return this.charcode[options];
-}
+};
 
 module.exports = SSPika;

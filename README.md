@@ -9,7 +9,7 @@ https://wiki.appcelerator.org/display/guides/Custom+Fonts
 * Font Awesome
     * http://fortawesome.github.com/Font-Awesome using fontawesome-webfont.ttf
 * Ligature Symbols
-    * http://kudakurage.com/ligature_symbols/ using LigatureSymbols.ttf
+    * http://kudakurage.com/ligature_symbols/ ( https://github.com/kudakurage/LigatureSymbols ) using LigatureSymbols.ttf
 * SS Pika
     * http://symbolset.com/ SSPika.ttf
 * Resources/app.js
@@ -22,7 +22,7 @@ https://wiki.appcelerator.org/display/guides/Custom+Fonts
     });
     var fontawesomeLabel = Ti.UI.createLabel({
         font: { fontFamily: fontawesome.fontfamily() },
-        text: fontawesome.icon('github') // or text: fontawesome.icon([ 'github', 'facebook', 'twitter' ]).join('')
+        text: fontawesome.icon('icon-github') // or text: fontawesome.icon([ 'icon-github', 'icon-facebook', 'icon-twitter' ]).join('')
     });
     window.add(fontawesomeLabel);
 
@@ -47,12 +47,10 @@ https://wiki.appcelerator.org/display/guides/Custom+Fonts
 ### Font Awesome
 http://fortawesome.github.com/Font-Awesome
 
-Version 2.0 of the Font Awesome font, CSS, and LESS files are licensed under CC BY 3.0:
-http://creativecommons.org/licenses/by/3.0/
-A mention of 'Font Awesome - http://fortawesome.github.com/Font-Awesome'
-in human-readable source code is considered acceptable attribution (most common on the
-web). If human readable source code is not available to the end user, a mention in an 'About'
-or 'Credits' screen is considered acceptable (most common in desktop or mobile software).
+* The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL.
+* Font Awesome CSS, LESS, and SASS files are licensed under the MIT License - http://opensource.org/licenses/mit-license.html.
+* The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+* Attribution is no longer required in Font Awesome 3.0, but much appreciated: Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome.
 ### Ligature Symbols
 http://kudakurage.com/ligature_symbols/
 

@@ -68,13 +68,13 @@
 			fontFamily: fontawesome.fontfamily()
 		},
 		textAlign: 'center',
-		text: fontawesome.icon('github')
+		text: fontawesome.icon('icon-github-alt')
 	});
 	wrapView.add(octocatLabel);
 
 	var baloonLabel = Ti.UI.createLabel({
 		top: 20,
-		right: 30,
+		right: 25,
 		width: Ti.UI.SIZE,
 		height: Ti.UI.SIZE,
 		color: '#000',
@@ -82,12 +82,12 @@
 			fontSize: 100,
 			fontFamily: fontawesome.fontfamily()
 		},
-		text: fontawesome.icon('commentAlt')
+		text: fontawesome.icon('icon-comment-alt')
 	});
 	wrapView.add(baloonLabel);
 
 	var awesomeLabel = Ti.UI.createLabel({
-		top: 45,
+		top: 60,
 		right: 43,
 		font: {
 			fontSize: 14,
