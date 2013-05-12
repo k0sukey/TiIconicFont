@@ -90,7 +90,7 @@ function FontAwesome(options) {
 		"icon-chevron-left": 0xf053,
 		"icon-chevron-right": 0xf054,
 		"icon-plus-sign": 0xf055,
-		"icon-minus-sign": 0xf0056,
+		"icon-minus-sign": 0xf056,
 		"icon-remove-sign": 0xf057,
 		"icon-ok-sign": 0xf058,
 		"icon-question-sign": 0xf059,

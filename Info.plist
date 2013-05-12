@@ -58,6 +58,7 @@
 	<array>
 		<string>/fonts/fontawesome-webfont.ttf</string>
 		<string>/fonts/LigatureSymbols.ttf</string>
+		<string>/fonts/ss-pika.ttf</string>
 	</array>
 </dict>
 </plist>

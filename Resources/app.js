@@ -65,10 +65,11 @@
 		color: '#000',
 		font: {
 			fontSize: 100,
-			fontFamily: fontawesome.fontfamily()
+			fontFamily: sspika.fontfamily()
 		},
 		textAlign: 'center',
-		text: fontawesome.icon('icon-github-alt')
+		text: sspika.icon('notifications disabled')
+//		text: fontawesome.icon('icon-github-alt')
 	});
 	wrapView.add(octocatLabel);
 
