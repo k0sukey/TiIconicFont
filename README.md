@@ -14,34 +14,41 @@ https://wiki.appcelerator.org/display/guides/Custom+Fonts
     * http://symbolset.com/ SSPika.ttf
 * Resources/app.js
 
-    var window = Ti.UI.createWindow();
+```JavaScript
 
-    var fontawesome = require('lib/IconicFont').IconicFont({
-        font: 'lib/FontAwesome',
-        ligature: false // optional, for ligature
-    });
-    var fontawesomeLabel = Ti.UI.createLabel({
-        font: { fontFamily: fontawesome.fontfamily() },
-        text: fontawesome.icon('icon-github') // or text: fontawesome.icon([ 'icon-github', 'icon-facebook', 'icon-twitter' ]).join('')
-    });
-    window.add(fontawesomeLabel);
+var window = Ti.UI.createWindow();
 
-    var ligaturesymbols = require('lib/IconicFont').IconicFont({
-        font: 'lib/LigatureSymbols',
-        ligature: false // optional, for ligature
-    });
-    var ligaturesymbolsLabel = Ti.UI.createLabel({
-        font: { fontFamily: ligaturesymbols.fontfamily() },
-        text: ligaturesymbols.icon('twitter') // or text: ligaturesymbols.icon([ 'github', 'facebook', 'twitter' ]).join('')
-    });
-    window.add(ligaturesymbolsLabel);
+var fontawesome = require('lib/IconicFont').IconicFont({
+	font: 'lib/FontAwesome',
+	ligature: false // optional, for ligature
+}); 
+var fontawesomeLabel = Ti.UI.createLabel({
+	font: {
+		fontFamily: fontawesome.fontfamily()
+	},
+	text: fontawesome.icon('icon-github') // or text: fontawesome.icon([ 'icon-github', 'icon-facebook', 'icon-twitter' ]).join('')
+}); 
+window.add(fontawesomeLabel);
 
-    var sspika = require('lib/IconicFont').IconicFont({
-        font: 'lib/ti.ss-pika',
-        ligature: true // optional, for ligature
-    });
+var ligaturesymbols = require('lib/IconicFont').IconicFont({
+	font: 'lib/LigatureSymbols',
+	ligature: false // optional, for ligature
+}); 
+var ligaturesymbolsLabel = Ti.UI.createLabel({
+	font: {
+		fontFamily: ligaturesymbols.fontfamily()
+	},
+	text: ligaturesymbols.icon('twitter') // or text: ligaturesymbols.icon([ 'github', 'facebook', 'twitter' ]).join('')
+}); 
+window.add(ligaturesymbolsLabel);
 
-    window.open();
+var sspika = require('lib/IconicFont').IconicFont({
+	font: 'lib/ti.ss-pika', 
+	ligature: true // optional, for ligature 
+});
+
+window.open();
+```
 
 ##Credits
 ### Font Awesome
