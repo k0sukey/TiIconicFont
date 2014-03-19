@@ -2,10 +2,10 @@ function SSPika(options) {
 	switch (Ti.Platform.osname) {
 		case 'iphone':
 		case 'ipad':
-			this.fontfamily = 'SSPika';
+			this.fontfamily = 'SS Pika';
 			break;
 		case 'android':
-			this.fontfamily = 'SSPika';
+			this.fontfamily = 'ss-pika';
 	}
 
 	this.charcode = {
