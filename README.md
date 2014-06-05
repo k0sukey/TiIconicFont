@@ -8,7 +8,7 @@ Iconic font charcode wrapping library for Titanium.
 
 ## Usage
 
-You can see example at [blob/master/Resources/app.js](blob/master/Resources/app.js).
+You can see example at [Resources/app.js](blob/master/Resources/app.js).
 If you want to use in Alloy [Ti.UX.Templates](https://github.com/jaraen/Ti.UX.Templates). This project is very usefull.
 
 ```javascript
