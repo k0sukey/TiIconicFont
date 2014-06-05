@@ -1,58 +1,71 @@
-#TiIconicFont
+# TiIconicFont
 
-##What is this
-Iconic font charcode wrapping library for Titanium Mobile.
+Iconic font charcode wrapping library for Titanium.
 
-##How to use
-https://wiki.appcelerator.org/display/guides/Custom+Fonts
+## Install
+1. Put the IconicFont.js and icon font JavaScript file on your project
+2. Download and put .ttf file on Resources/fonts folder
 
-* Font Awesome
-    * http://fortawesome.github.com/Font-Awesome using fontawesome-webfont.ttf
-* Ligature Symbols
-    * http://kudakurage.com/ligature_symbols/ ( https://github.com/kudakurage/LigatureSymbols ) using LigatureSymbols.ttf
-* SS Pika
-    * http://symbolset.com/ SSPika.ttf
-* Resources/app.js
+## Usage
 
-    var window = Ti.UI.createWindow();
+You can see example at [blob/master/Resources/app.js](blob/master/Resources/app.js).
+If you want to use in Alloy [Ti.UX.Templates](https://github.com/jaraen/Ti.UX.Templates). This project is very usefull.
 
-    var fontawesome = require('lib/IconicFont').IconicFont({
-        font: 'lib/FontAwesome',
-        ligature: false // optional, for ligature
-    });
-    var fontawesomeLabel = Ti.UI.createLabel({
-        font: { fontFamily: fontawesome.fontfamily() },
-        text: fontawesome.icon('icon-github') // or text: fontawesome.icon([ 'icon-github', 'icon-facebook', 'icon-twitter' ]).join('')
-    });
-    window.add(fontawesomeLabel);
+```javascript
+var IconicFont = require('/lib/IconicFont'),
+	iconicFont = new IconicFont({
+		font: '/lib/FontAwesome'
+	});
+var label = Ti.UI.createLabel({
+	font: {
+		fontFamily: iconicFont.fontfamily
+	},
+	text: iconicFont.icon('icon name here')
+});
+```
 
-    var ligaturesymbols = require('lib/IconicFont').IconicFont({
-        font: 'lib/LigatureSymbols',
-        ligature: false // optional, for ligature
-    });
-    var ligaturesymbolsLabel = Ti.UI.createLabel({
-        font: { fontFamily: ligaturesymbols.fontfamily() },
-        text: ligaturesymbols.icon('twitter') // or text: ligaturesymbols.icon([ 'github', 'facebook', 'twitter' ]).join('')
-    });
-    window.add(ligaturesymbolsLabel);
-
-    var sspika = require('lib/IconicFont').IconicFont({
-        font: 'lib/ti.ss-pika',
-        ligature: true // optional, for ligature
-    });
-
-    window.open();
-
-##Credits
 ### Font Awesome
-http://fortawesome.github.com/Font-Awesome
 
-* The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL.
-* Font Awesome CSS, LESS, and SASS files are licensed under the MIT License - http://opensource.org/licenses/mit-license.html.
-* The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
-* Attribution is no longer required in Font Awesome 3.0, but much appreciated: Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome.
+![fontawesome.png](screenshot/fontawesome.png)
+
+### Glyphs
+
+![glyphs.png](screenshot/glyphs.png)
+
+### Entypo
+
+![entypo.png](screenshot/entypo.png)
+
+### Typicons
+
+![typicons.png](screenshot/typicons.png)
+
 ### Ligature Symbols
-http://kudakurage.com/ligature_symbols/
 
-You can get Ligature Symbols for free. This Font is licensed under the SIL Open Font License for download and using.
-Ligature Symbols has broad support for the modern browser (Chrome, Safari, Firefox, iOS - Mobile Safari, Android Browser).
+![ligaturesymbols.png](screenshot/ligaturesymbols.png)
+
+## Credits
+
+### Font Awesome
+
+[Font Awesome 4.1.0 Created by Dave Gandy](http://fontawesome.io/), [SIL Open Font Licence](http://scripts.sil.org/OFL)
+
+### Glyphs
+
+[WebHostingHub Glyphs Created by WebHostingHub](http://www.webhostinghub.com/glyphs/), [SIL Open Font Licence](http://scripts.sil.org/OFL)
+
+### Entypo
+
+[Entypo pictograms 2.0 by Daniel Bruce](www.entypo.com), [SIL Open Font Licence](http://scripts.sil.org/OFL)
+
+### Typicons
+
+[Typicons 2.0.3 Created by Stephen Hutchings](http://typicons.com/), [SIL Open Font Licence](http://scripts.sil.org/OFL)
+
+### Ligature Symbols
+
+[Ligature Symbols 2.11 Created by Kazuyuki Motoyama](http://kudakurage.com/ligature_symbols/), [SIL Open Font Licence](http://scripts.sil.org/OFL)
+
+## License
+
+The MIT License (MIT) Copyright (c) 2014 Kosuke Isobe

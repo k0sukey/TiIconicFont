@@ -1,53 +1,39 @@
-var exports = exports || this;
-exports.IconicFont = (function(global){
-	var K = function(){};
+var fontfamily;
 
-	var IconicFont = function(options) {
-		var self;
+function IconicFont(params) {
+	params = params || {};
 
-		if (this instanceof IconicFont) {
-			self = this;
-		} else {
-			self = new K();
+	this._font = require(params.font);
+}
+
+Object.defineProperties(IconicFont.prototype, {
+	font: {
+		set: function(param){
+			this._font = require(param);
+		},
+		get: function(){
+			return this._font;
 		}
-
-		if (!options) { options = {}; }
-		self.ligature = options.ligature || false;
-		var Font = require(options.font);
-		self.font = new Font();
-
-		return self;
-	};
-
-	K.prototype = IconicFont.prototype;
-
-	IconicFont.prototype.icon = function(options){
-		var self = this;
-
-		if (options instanceof Array) {
-			options.forEach(function(value){
-				if (self.ligature) {
-					icons.push(self.font.getCharcode(value));
-				} else {
-					icons.push(String.fromCharCode(self.font.getCharcode(value)));
-				}
-			});
-
-			return icons;
-		} else {
-			if (self.ligature) {
-				return self.font.getCharcode(options);
-			} else {
-				return String.fromCharCode(self.font.getCharcode(options));
-			}
+	},
+	fontfamily: {
+		get: function(){
+			return this._font.fontfamily;
 		}
-	};
+	}
+});
 
-	IconicFont.prototype.fontfamily = function(){
-		var self = this;
+IconicFont.prototype.icon = function(param){
+	var result = [];
 
-		return self.font.fontfamily;
-	};
+	if (!Array.isArray(param)) {
+		param = [param];
+	}
 
-	return IconicFont;
-})(this);
+	for (var i = 0; i < param.length; i++) {
+		result.push(String.fromCharCode(this._font.charcode[param[i]]));
+	}
+
+	return result.join('');
+};
+
+module.exports = IconicFont;
