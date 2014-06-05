@@ -1,5 +1,3 @@
-var fontfamily;
-
 function IconicFont(params) {
 	params = params || {};
 
