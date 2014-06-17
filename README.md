@@ -3,6 +3,7 @@
 Iconic font charcode wrapping library for Titanium.
 
 ## Install
+
 1. Put the IconicFont.js and icon font JavaScript file on your project
 2. Download and put .ttf file on Resources/fonts folder
 
@@ -28,6 +29,10 @@ var label = Ti.UI.createLabel({
 
 ![fontawesome.png](screenshot/fontawesome.png)
 
+### Octicons
+
+![octicons.png](screenshot/octicons.png)
+
 ### Glyphs
 
 ![glyphs.png](screenshot/glyphs.png)
@@ -49,6 +54,10 @@ var label = Ti.UI.createLabel({
 ### Font Awesome
 
 [Font Awesome 4.1.0 Created by Dave Gandy](http://fontawesome.io/), [SIL Open Font Licence](http://scripts.sil.org/OFL)
+
+### Octicons
+
+[Octicons 2.0.1 Created by GitHub](http://octicons.github.com/), [SIL Open Font Licence](http://scripts.sil.org/OFL)
 
 ### Glyphs
 
