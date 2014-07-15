@@ -75,6 +75,10 @@ var label = Ti.UI.createLabel({
 
 [Ligature Symbols 2.11 Created by Kazuyuki Motoyama](http://kudakurage.com/ligature_symbols/), [SIL Open Font Licence](http://scripts.sil.org/OFL)
 
+### Stroke 7
+
+[Stroke 7 1.1.0 by Pixeden](http://themes-pixeden.com/font-demos/7-stroke/index.html), [Pixeden Resource Licence](http://www.pixeden.com/license)
+
 ## License
 
 The MIT License (MIT) Copyright (c) 2014 Kosuke Isobe
