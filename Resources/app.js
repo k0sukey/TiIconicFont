@@ -337,7 +337,63 @@ for (var key in iconicFont.font.charcode) {
 	iterator++;
 }
 
+// Stroke 7 
+iconicFont.font = '/lib/StrokeSeven';
+
+var strokesevenWindow = Ti.UI.createWindow({
+		backgroundColor: '#fff',
+		title: 'Stroke 7'
+	}),
+	strokesevenTab = Ti.UI.createTab({
+		title: 'Stroke 7',
+		window: strokesevenWindow
+	}),
+	strokesevenScrollView = Ti.UI.createScrollView({
+		top: 0,
+		right: 0,
+		bottom: 0,
+		left: 0,
+		width: Ti.UI.FILL,
+		height: Ti.UI.FILL,
+		layout: 'vertical'
+	});
+strokesevenWindow.add(strokesevenScrollView);
+
+iterator = 0;
+row = null;
+for (var key in iconicFont.font.charcode) {
+	if (iterator % 5 === 0) {
+		if (row) {
+			strokesevenScrollView.add(row);
+		}
+		row = Ti.UI.createView({
+			top: 0,
+			right: 0,
+			bottom: 0,
+			left: 0,
+			width: Ti.UI.FILL,
+			height: 64,
+			layout: 'horizontal'
+		});
+	}
+
+	row.add(Ti.UI.createLabel({
+		width: '20%',
+		height: 64,
+		color: '#333',
+		font: {
+			fontSize: 48,
+			fontFamily: iconicFont.fontfamily
+		},
+		text: iconicFont.icon(key),
+		textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+		verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
+	}));
+
+	iterator++;
+}
+
 var tabgroup = Ti.UI.createTabGroup({
-	tabs: [ fontawesomeTab, octiconsTab, glyphsTab, entypoTab, typiconsTab, ligaturesymbolsTab ]
+	tabs: [ fontawesomeTab, octiconsTab, glyphsTab, entypoTab, typiconsTab, ligaturesymbolsTab,  strokesevenTab]
 });
 tabgroup.open();
