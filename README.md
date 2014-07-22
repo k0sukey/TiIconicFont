@@ -49,6 +49,10 @@ var label = Ti.UI.createLabel({
 
 ![ligaturesymbols.png](screenshot/ligaturesymbols.png)
 
+### Stroke7
+
+![stroke7.png](screenshot/stroke7.png)
+
 ## Credits
 
 ### Font Awesome
