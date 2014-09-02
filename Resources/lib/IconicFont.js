@@ -1,3 +1,12 @@
+function fixedFromCharCode (codePt) {  
+  if (codePt > 0xFFFF) {  
+    codePt -= 0x10000;  
+    return String.fromCharCode(0xD800 + (codePt >> 10), 0xDC00 + (codePt & 0x3FF));  
+  } else {  
+    return String.fromCharCode(codePt);  
+  }  
+}
+
 function IconicFont(params) {
 	params = params || {};
 
@@ -28,7 +37,7 @@ IconicFont.prototype.icon = function(param){
 	}
 
 	for (var i = 0; i < param.length; i++) {
-		result.push(String.fromCharCode(this._font.charcode[param[i]]));
+		result.push(fixedFromCharCode(this._font.charcode[param[i]]));
 	}
 
 	return result.join('');
