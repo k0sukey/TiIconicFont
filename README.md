@@ -53,6 +53,10 @@ var label = Ti.UI.createLabel({
 
 ![stroke7.png](screenshot/stroke7.png)
 
+### Material
+
+![material.png](screenshot/material.png)
+
 ## Credits
 
 ### Font Awesome
