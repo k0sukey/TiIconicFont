@@ -87,6 +87,10 @@ var label = Ti.UI.createLabel({
 
 [Stroke 7 1.1.0 by Pixeden](http://themes-pixeden.com/font-demos/7-stroke/index.html), [Pixeden Resource Licence](http://www.pixeden.com/license)
 
+### Material
+
+[Material Icons Font by Google](https://github.com/google/material-design-icons/tree/master/iconfont), [CC-BY Creative Commons Public License](https://github.com/google/material-design-icons/blob/master/LICENSE)
+
 ## License
 
 The MIT License (MIT) Copyright (c) 2014 Kosuke Isobe
